@@ -1,28 +1,34 @@
-<!DOCTYPE html><html><head>
-    <title>Calculator</title><meta charset="utf-8">
-    <script type="text/javascript">
-        function cube() {
-            var num = document.getElementById("n1");
-            num.value = Math.pow(num.value, 3);
-        }
-
-        function seno() {
-            var num = document.getElementById("n3");
-            num.value = Math.sin(num.value);
-        }
-    </script>
+<!DOCTYPE html><html><head> <title>Calculator</title><meta charset="utf-8"> <script type="text/javascript">
+    function cube() {
+        var num = document.getElementById("n1");
+        num.value = Math.pow(num.value, 3);
+    }
+    function four() {
+        var num = document.getElementById("n2");
+        num.value = Math.pow(num.value, 4);
+    }
+    function sin() {
+        var num = document.getElementById("n3");
+        num.value = Math.sin(num.value);
+    }
+</script>
 </head>
 <body>
-<h1>Calculadora de Juan Rengel Moreno</h1>
+<h1> Calculadora de Juan Rengel Moreno </h1>
+
 Number:
 <input type="text" id="n1">
+<button onclick="cube()"> x^3 </button> </body> <p></p>
 
-    <button onclick="cube()"> x^3 </button>
-<p></p>
 
-Number:
-<input type="text" id="n3">
-    <button onclick="seno()"> seno </button>
-<p></p>
-</body>
+    Number:
+    <input type="text" id="n2">
+<button onclick="four()"> x^4</button> <p></p>
+
+
+    Number:
+    <input type="text" id="n3">
+    <button onclick="sin()"> sin(x)(la x está en radianes) </button>
+
+    </body>
 </html>
